@@ -13,6 +13,8 @@ import learnxplore from "../src/assets/learn.png"
 import content from "../src/assets/content.png"
 import geometry from "../src/assets/Geometric shapes.png"
 import socials from "../src/assets/Social icons.png"
+
+
 const WaitlistPage = () => {
   return (
   <>
@@ -188,7 +190,7 @@ const WaitlistPage = () => {
 
 
 
-          <div className="socials">]
+          <div className="socials">
             <img src={socials} alt="" />
           </div>
         </div>
