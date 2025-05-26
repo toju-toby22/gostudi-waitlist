@@ -1,0 +1,773 @@
+:root {
+  /* font-family: system-ui, Avenir, Helvetica, Arial, sans-serif; */
+  /* line-height: 1.5;   */
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  padding: 0;
+  box-sizing: 0;
+}
+
+.page-body {
+  background-image: url("../assets/Background pattern.png");
+  z-index: -200;
+  height: 100vh;
+}
+
+.navigationbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* width: 1280px; */
+  /* margin: 0 auto; */
+  height: 58px;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 10px;
+}
+
+.gostudie-logo h3 {
+  font-family: "Nunito", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 120%;
+  letter-spacing: -2%;
+}
+
+.aboutus-contactusbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  border-radius: 30px;
+  /* padding: 10px; */
+  background-color: rgba(245, 246, 251, 1);
+  height: 58px;
+  width: 269px;
+}
+
+.contactus-text,
+.aboutus-text {
+  font-family: Open Sans;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 145%;
+  letter-spacing: 0%;
+  color: rgba(102, 112, 133, 1);
+
+}
+
+.join-waitlist {
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+
+}
+
+.join-waitlist-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(103, 41, 255, 1);
+  color: white;
+  height: 44px;
+  width: 129px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.better-learning {
+  font-family: Nunito;
+  font-weight: 600;
+  font-size: 96px;
+  line-height: 120%;
+  letter-spacing: -4%;
+  text-align: center;
+}
+
+.students {
+  position: relative;
+  padding-right: 20px;
+}
+
+.students::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 8px;
+  /* Acts like your border thickness */
+  height: 100%;
+  background: linear-gradient(232.81deg, #B53BFF 23.04%, #3B3BFF 56.83%, #913BFF 95.13%);
+  border-radius: 100px;
+}
+
+.learning {
+  color: rgba(119, 77, 255, 1);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* width: 1054px; */
+  /* height: 230px; */
+}
+
+.early-access {
+  width: 278px;
+  height: 64px;
+  padding-top: 2px;
+  padding-right: 4px;
+  padding-bottom: 2px;
+  padding-left: 4px;
+  gap: 10px;
+  border-radius: 1000px;
+  border-width: 1px;
+  background-color: rgba(12, 17, 29, 1);
+  color: white;
+  font-family: Nunito;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: -2%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -20px;
+}
+
+.early-access:hover {
+  background-color: rgb(253, 253, 253);
+  color: rgba(119, 77, 255, 1);
+}
+
+.xp-images {
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  gap: 20px;
+  padding: 0 40px;
+  margin-top: 60px;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  gap: 33px;
+  /* justify-content: space-around; */
+  align-items: center;
+}
+
+.graph-image {
+  width: 100%;
+  height: max-content;
+  object-fit: contain;
+  /* margin-top: 28px; */
+}
+
+.addnew-image {
+  width: 302px;
+  height: 236px;
+}
+
+.xpPoints-image {
+  width: 302px;
+  height: 196px;
+}
+
+
+.right-text-box {
+  font-family: Open Sans;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 145%;
+  letter-spacing: 1.6%;
+  color: rgba(52, 64, 84, 1);
+}
+
+.graph-image {
+  /* width: 306px; */
+  height: 325px;
+}
+
+.full-frame {
+  display: none;
+}
+
+.empowering-student-text {
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.who-is-this-for-container {
+  background: linear-gradient(232.81deg, rgba(248, 245, 255, 1) 23.04%, rgba(251, 252, 252, 1) 56.83%);
+  /* height: 834px; */
+  padding: 40px 0;
+  margin-top: 50px;
+
+}
+
+.text-footer h2 {
+  font-family: Nunito;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 100%;
+  letter-spacing: -4%;
+  text-align: center;
+}
+
+.txt {
+  display: flex;
+  justify-content: center;
+  padding: 0 230px;
+
+  /* align-items: center; */
+}
+
+.sub-txt {
+  font-family: Open Sans;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 145%;
+  letter-spacing: 0%;
+  text-align: center;
+  color: rgba(24, 34, 48, 1);
+
+}
+
+.categories {
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-top: 80px;
+}
+
+.categories img:hover {
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.content-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+.header_delve {
+  font-family: Nunito;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 100%;
+  letter-spacing: -4%;
+  text-align: center;
+  color: rgba(16, 24, 40, 1);
+}
+
+.lessons {
+  font-family: Open Sans;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 145%;
+  letter-spacing: 1.6%;
+  text-align: center;
+  width: 65%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.videos h4,
+.test h4,
+.community h4 {
+  font-family: Nunito;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 120%;
+  letter-spacing: -2%;
+  color: rgba(12, 17, 29, 1);
+}
+
+.videos p,
+.test p,
+.community p {
+  font-family: Open Sans;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 145%;
+  letter-spacing: 1.6%;
+  margin-top: -20px;
+  color: rgba(71, 84, 103, 8);
+}
+
+.videos,
+.test,
+.community {
+  /* border: 1px solid gray; */
+}
+
+
+.videos {
+  position: relative;
+  padding-left: 20px;
+  padding-bottom: 0px;
+  padding-top: 5px;
+}
+
+.videos ::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  /* Acts like your border thickness */
+  height: 180px;
+  background: orange;
+
+}
+
+
+.test {
+  position: relative;
+  padding-left: 20px;
+  padding-bottom: 0px;
+  padding-top: 5px;
+}
+
+.test ::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  /* Acts like your border thickness */
+  height: 180px;
+  background: gainsboro;
+}
+
+
+
+.community {
+  position: relative;
+  padding-left: 20px;
+  padding-bottom: 0px;
+  padding-top: 5px;
+}
+
+.community ::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  /* Acts like your border thickness */
+  height: 160px;
+  background: gainsboro;
+}
+
+.features-content-body {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  gap: 30px;
+  width: 88%;
+}
+
+.features {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-side img {
+  height: 516px;
+  width: 624px;
+}
+
+
+.geomtry {
+  width: 100%;
+  height: 100%;
+}
+
+.geometry-shapes {
+  margin-top: 60px;
+  /* margin-right: -90px; */
+}
+
+
+
+
+
+
+
+
+
+
+.footer {
+  background-color: rgba(17, 17, 17, 1);
+  padding: 20px;
+}
+
+.gostudie-logo h2 {
+  font-family: Nunito;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 100%;
+  letter-spacing: -4%;
+  color: white;
+}
+
+.gostudie-logo{
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(245, 245, 245, 0.459);
+}
+
+.rights-socials p {
+  font-family: Open Sans;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 145%;
+  letter-spacing: 0%;
+  color: rgba(234, 236, 240, 1);
+}
+
+.rights-socials{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+/* Smaller screen */
+
+@media (max-width: 428px) {
+
+  .features-content-body {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  justify-content: center;
+  gap: 30px;
+  /* width: 88%; */
+}
+.right-side img {
+  height:100%;
+  width: 100%;
+}
+  .better-learning {
+    padding-top: 30px;
+  }
+
+  .aboutus-contactusbar {
+    display: none;
+  }
+
+  .join-waitlist-btn {
+    border: 1px solid rgba(214, 198, 255, 1);
+    background-color: rgba(249, 250, 251, 1);
+    color: rgba(119, 77, 255, 1);
+  }
+
+  .navigationbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* width: 517px; */
+    margin: 0 auto;
+    /* margin-top: 20px; */
+    height: 58px;
+    padding: 0 10px;
+  }
+
+  .join-waitlist {
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+  }
+
+  .gostudie-logo h3 {
+    font-size: 25px;
+    padding-top: 30px;
+  }
+
+
+
+
+  /*  */
+
+  .empowering-student-text {
+    display: block;
+  }
+
+  .frame {
+    width: 100%;
+    height: 143px;
+
+  }
+
+  .full-frame {
+    margin-top: 40px;
+  }
+
+  .empowering-student-text {
+    text-align: center;
+  }
+
+  .better-learning {
+    font-size: 32px;
+  }
+
+  .students::after {
+    width: 4px;
+  }
+
+  .early-access {
+    font-size: 14px;
+    width: 185px;
+    height: 36px;
+    margin: 20px 0;
+  }
+
+  .xp-images {
+    display: none;
+  }
+
+  .full-frame {
+    display: block;
+  }
+
+
+
+
+
+
+
+
+
+  /*  */
+
+  .txt {
+    padding: 0;
+  }
+}
+
+
+
+/* Mobile Devices */
+@media (max-width: 768px) {
+
+  
+  .better-learning {
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .early-access {
+    width: 90%;
+    font-size: 16px;
+    height: 50px;
+  }
+
+  .xp-images {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 0 20px;
+  }
+
+  .addnew-image,
+  .xpPoints-image,
+  .graph-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .container {
+    padding: 0 20px;
+    text-align: center;
+  }
+
+  .right-text-box {
+    padding: 0 20px;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .who-is-this-for-container {
+    padding: 30px 20px;
+  }
+
+  .text-footer h2 {
+    font-size: 32px;
+  }
+
+  .txt {
+    padding: 0;
+    font-size: 14px;
+  }
+
+  .categories {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .features-content-body {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 0 20px;
+  }
+
+  .left-side {
+    text-align: center;
+  }
+
+  .header_delve {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .lessons {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .rights-socials {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+}
+
+/* Tablets */
+@media (min-width: 769px) and (max-width: 1024px) {
+
+   .features-content-body {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  justify-content: center;
+  gap: 30px;
+  /* width: 88%; */
+}
+  .better-learning {
+    font-size: 60px;
+  }
+
+  .early-access {
+    width: 240px;
+    font-size: 18px;
+  }
+
+  .xp-images {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 30px;
+  }
+
+  .right-text-box {
+    font-size: 16px;
+    padding: 0 40px;
+  }
+
+  .txt {
+    padding: 0 60px;
+    font-size: 15px;
+  }
+
+  .categories {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .features-content-body {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+
+  .header_delve {
+    font-size: 36px;
+    text-align: center;
+  }
+
+  .lessons {
+    font-size: 16px;
+    text-align: center;
+  }
+}
